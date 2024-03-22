@@ -1,17 +1,24 @@
-<form #registerForm="ngForm" (ngSubmit)="onRegister(registerForm)">
-    <h2>Register</h2>
-    <div>
-      <label>Name:</label>
-      <input type="text" name="name" ngModel required>
-    </div>
-    <div>
-      <label>Email:</label>
-      <input type="email" name="email" ngModel required>
-    </div>
-    <div>
-      <label>Password:</label>
-      <input type="password" name="password" ngModel required>
-    </div>
-    <button type="submit" [disabled]="!registerForm.form.valid">Register</button>
-  </form>
+<form #registerForm="ngForm">
+  <div>
+    <label>Name:</label>
+    <input type="text" name="name" ngModel required>
+  </div>
+  <div>
+    <label>Email:</label>
+    <input type="email" name="email" ngModel required>
+  </div>
+  <div>
+    <label>Password:</label>
+    <input type="password" name="password" ngModel required>
+  </div>
+  <div>
+    <label>Age:</label>
+    <input type="number" name="age" ngModel required>
+  </div>
+  <div>
+    <label>Mobile Number:</label>
+    <input type="text" name="mobileNumber" ngModel required>
+  </div>
+  <button type="button" (click)="onRegister(registerForm)">Register</button>
+</form>
   

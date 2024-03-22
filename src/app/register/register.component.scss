@@ -26,14 +26,15 @@ form {
   
   input[type="text"],
   input[type="email"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="number"] {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
-  button[type="submit"] {
+  button[type="button"] {
     width: 100%;
     padding: 10px;
     background-color: #333;
@@ -44,7 +45,7 @@ form {
     transition: background-color 0.3s ease;
   }
   
-  button[type="submit"]:hover {
+  button[type="button"]:hover {
     background-color: #555;
   }
   
